@@ -10,13 +10,20 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <section className="App">
-          <LeftSideNav />
-            <div>
+        <section className="App container">
+          <header className="header">
+            Header Part
+          </header>
+          <div className="content">
+            <LeftSideNav
+              className="sidebar"
+            />
+            <main className="main-view">
               <Route exact path="/" component={Home} />
               <Route path="/color-browser" component={ColorBrowser} />
               <Route path="/cooking-timers" component={CookingTimers} />
-            </div>
+            </main>
+          </div>
         </section>
       </Router>
     );
