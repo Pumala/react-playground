@@ -11,9 +11,6 @@ class App extends Component {
     return (
       <Router>
         <section className="App container">
-          <header className="header">
-            Header Part
-          </header>
           <div className="content">
             <LeftSideNav
               className="sidebar"

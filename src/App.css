@@ -1,26 +1,26 @@
 .container {
     /* max-width: 120rem; */
-    background: tomato;
+    /* background: tomato; */
     height: 100vh;
     /* min-height: 50rem; */
 }
 
-.header {
+/* .header {
     height: 8vh;
     background-color: palegreen;
-}
+} */
 
 .content {
     display: flex;
 }
 
 .sidebar {
-    height: 92vh;
+    height: 100vh;
     /* flex: 0 0 18%; */
 }
 
 .main-view {
-    background-color: peachpuff;
+    /* background-color: peachpuff; */
     flex: 1;
     /* or use width: 100%  */
 }
