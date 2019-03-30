@@ -1,0 +1,11 @@
+.rgbDisplayer-container {
+    margin: 0 auto;
+}
+
+.rgbDisplayer-container div {
+    border: 1px solid #000;
+}
+
+.rgbDisplayer-container p {
+    color: #fff;
+}
