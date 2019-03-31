@@ -1,0 +1,25 @@
+
+.home {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+     */
+     /* display: block; */
+    //  grid-column: full-start / col-end 6;
+    //  display: grid;
+    //  grid-template-rows: 1fr min-content 6rem 1fr;
+    //  grid-row-gap: 1.5rem;
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    place-items: center center;
+     > .content {
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        p {
+            font-size: 1.25rem;
+        }
+    }    
+}

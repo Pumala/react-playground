@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ColorBrowser.css';
+import './ColorBrowser.scss';
 import ColorSliders from '../ColorSliders/ColorSliders';
 import RGBDisplayer from '../RGBDisplayer/RGBDisplayer';
 
@@ -46,10 +46,12 @@ const ColorBrowser = () => {
     }
 
     return (
-        <div>
-            <h1>{title}</h1>
-            <ColorSliders colors={colors} updateColorValue={updateColorValue} />
-            <RGBDisplayer colors={colors} />
+        <div className="color-browser-app">
+            <div className="content">
+                <h1>{title}</h1>
+                <ColorSliders colors={colors} updateColorValue={updateColorValue} />
+                <RGBDisplayer colors={colors} />
+            </div>
         </div>
     )
 };

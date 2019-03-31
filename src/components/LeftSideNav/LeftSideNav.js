@@ -1,10 +1,10 @@
 import React, { useSet } from 'react';
 import { Link } from 'react-router-dom';
-import './LeftSideNav.css';
+import './LeftSideNav.scss';
 
 const LeftSideNav = () => {
     return (
-        <nav className="sidebar">
+        <nav className="left-sidebar">
             <ul>
                 <li>
                     <Link 

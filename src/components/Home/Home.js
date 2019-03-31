@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './Home.scss';
 
 const Home = () => {
 
@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <section className="home">
             <div className="content">
-                <h2>{title}</h2>
+                <h1>{title}</h1>
                 <p>{subTitle}</p>
             </div>
         </section>

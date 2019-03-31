@@ -4,7 +4,7 @@ import Home from './components/Home/Home';
 import ColorBrowser from './components/ColorBrowserApp/ColorBrowser/ColorBrowser';
 import CookingTimers from './components/CookingTimersApp/CookingTimers/CookingTimers';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {
