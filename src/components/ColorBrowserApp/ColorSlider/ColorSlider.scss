@@ -3,8 +3,16 @@
     grid-template-columns: 15% 70% 15%;
     .color-name {
         text-align: left;
+        font-weight: bold;
     }
     .color-value {
         text-align: right;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-height: 667px) {
+    .color-slider {
+        margin-bottom: 10px;;
     }
 }

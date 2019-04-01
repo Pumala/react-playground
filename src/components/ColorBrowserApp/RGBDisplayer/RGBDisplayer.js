@@ -17,6 +17,7 @@ const Box = styled(Container)`
 
 const Text = styled.p`
     padding: 2rem 0;
+    font-weight: bold;
 `
 
 const RGBDisplayer = ({ colors }) => {
