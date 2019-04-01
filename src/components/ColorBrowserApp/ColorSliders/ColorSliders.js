@@ -1,13 +1,11 @@
 import React from 'react';
-import './ColorSliders.css';
+import './ColorSliders.scss';
 import ColorSlider from '../ColorSlider/ColorSlider';
 
 const ColorSliders = ({colors, updateColorValue}) => {
-    
-    console.log('colors', colors);
 
     return (
-        <div>
+        <div className="color-sliders">
             {
                 colors && colors.map((color, idx) => (
                     <ColorSlider 

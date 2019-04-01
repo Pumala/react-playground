@@ -1,8 +1,15 @@
 @import '../../../styles/styles.scss';
 
 .color-browser-app {
-    @extend %center-content;
+    // @extend %center-content;
+    display: grid;
+    height: 100vh;
     > .content {
         // grid-column-start: 1;
+        text-align: center;
+        width: 100%;
+        h1 {
+            padding: 2rem 0;
+        }
     }
 }  

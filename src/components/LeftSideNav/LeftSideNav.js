@@ -7,6 +7,11 @@ const LeftSideNav = () => {
         <nav className="left-sidebar">
             <ul>
                 <li>
+                    <Link
+                        to="/"
+                    >Home</Link>
+                </li>
+                <li>
                     <Link 
                         to="/color-browser"
                     >Color Browser</Link>

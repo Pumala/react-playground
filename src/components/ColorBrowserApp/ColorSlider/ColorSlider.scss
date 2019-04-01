@@ -1,0 +1,10 @@
+.color-slider {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    .color-name {
+        text-align: left;
+    }
+    .color-value {
+        text-align: right;
+    }
+}

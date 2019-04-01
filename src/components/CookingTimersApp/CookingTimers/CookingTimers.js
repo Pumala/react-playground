@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Timers from '../Timers/Timers.js';
 import uuid from 'uuid';
+import './CookingTimers.scss';
 
 const CookingTimersPage = () => {
 
@@ -204,7 +205,7 @@ const CookingTimersPage = () => {
     }
 
     return (
-        <div>
+        <div className="cooking-timers-app">
             <div>
                 <h1>{title}</h1>
                 <span>
@@ -212,8 +213,7 @@ const CookingTimersPage = () => {
                         onClick={() => addTimer()}
                     >+</button>
                 </span>
-            </div>
-            <Timers
+                <Timers
                 timers={timers}
                 startTimer={startTimer}
                 pauseTimer={pauseTimer}
@@ -222,6 +222,7 @@ const CookingTimersPage = () => {
                 decreaseTime={decreaseTime}
                 updateTimerName={updateTimerName}
             />
+            </div>
         </div>
     )
 };

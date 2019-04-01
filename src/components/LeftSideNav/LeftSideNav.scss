@@ -4,17 +4,23 @@
     background: teal;
     /* max-width: 200px;
     position: absolute; */
-    padding: 10px;
+    padding: 2em;
     ul {
         margin: 0;
         padding: 0;
         list-style-type: none;
         li {
-            margin-bottom: 10px;
+            margin-bottom: 2em;
             a {
                 color: #fff;
                 text-decoration: none;
             }
         }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .left-sidebar {
+        display: none;
     }
 }

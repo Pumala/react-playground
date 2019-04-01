@@ -1,14 +1,17 @@
 import React from 'react';
-import './ColorSlider.css';
+import './ColorSlider.scss';
 
 const ColorSlider = ({color, updateColorValue}) => {
 
-    // console.log('Color Slider level: ', color);
     const { name, value } = color;
 
+    const colorLetter = name.slice(0, 1).toUpperCase();
+
     return (
-        <div>
-            <span>{color.name}</span>
+        <div className="color-slider">
+            <span 
+                className="color-name"
+            >{colorLetter}</span>
             <input 
                 type="range" 
                 name={color.name} 
@@ -17,7 +20,9 @@ const ColorSlider = ({color, updateColorValue}) => {
                 min="0"
                 max="255"
             />
-            <span>{color.value}</span>
+            <span
+                className="color-value"
+            >{color.value}</span>
         </div>
     )
 };
