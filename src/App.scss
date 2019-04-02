@@ -20,12 +20,30 @@
         }
     }
 }
+.sidebar {
+    position: absolute;
+    height: 100vh;
+}
 
-/* .header {
+header {
     height: 8vh;
-    background-color: palegreen;
-} */
+    .toggle-menu-button {
+        display: none;
+    }
+} 
 
-h1, h2, h3, h4 {
-    margin: 0;
+@media screen and (max-width: 400px) {
+    header {
+        .toggle-menu-button {
+            display: block;
+            position: absolute;
+            font-size: 50px;
+            // color: #fff;
+        }
+    }
+    .left-sidebar {
+        // display: none;
+        position: absolute;
+        height: 100vh;
+    }
 }

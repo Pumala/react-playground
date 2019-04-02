@@ -48,11 +48,13 @@ const ColorBrowser = () => {
     return (
         <div className="color-browser-app">
             <div className="content">
-                <h1>{title}</h1>
-                <ColorSliders 
-                    colors={colors} 
-                    updateColorValue={updateColorValue} 
+                <div>
+                    <h1>{title}</h1>
+                    <ColorSliders 
+                        colors={colors} 
+                        updateColorValue={updateColorValue} 
                 />
+                </div>
                 <RGBDisplayer 
                     colors={colors} 
                 />

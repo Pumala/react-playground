@@ -2,9 +2,13 @@ import React, { useSet } from 'react';
 import { Link } from 'react-router-dom';
 import './LeftSideNav.scss';
 
-const LeftSideNav = () => {
+const LeftSideNav = ({toggleMenu}) => {
+
+    console.log('toggling away...', toggleMenu);
+
     return (
-        <nav className="left-sidebar">
+        <nav 
+            className={"left-sidebar" && toggleMenu ? "show" : "hide"}>
             <ul>
                 <li>
                     <Link

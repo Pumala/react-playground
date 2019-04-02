@@ -4,8 +4,8 @@ import styled, { css } from 'styled-components';
 import ColorValueDisplayer from '../ColorValueDisplayer/ColorValueDisplayer';
 
 const Container = styled.div`
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
 `
 
 const Box = styled(Container)`
@@ -13,6 +13,8 @@ const Box = styled(Container)`
     max-width: 300px;
     max-height: 300px;
     margin: 0 auto;
+    width: 300px;
+    height: 300px;
 `
 
 const Text = styled.p`

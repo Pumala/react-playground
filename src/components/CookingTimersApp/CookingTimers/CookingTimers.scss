@@ -2,15 +2,16 @@
 
 .cooking-timers-app {
     // @extend %center-content;
-    display: grid;
+    // display: grid;
     height: 100vh;
+    overflow: scroll;
     // justify-items: center;
     > .content {
         overflow: scroll;
-        padding-top: 4rem;
+        // padding-top: 4rem;
         // width: 100%;
         text-align: center;
-        margin: 10px;
+        // margin: 10px;
         > h1 {
             display: inline-block;
         }

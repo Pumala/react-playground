@@ -2,12 +2,13 @@
 
 .color-browser-app {
     // @extend %center-content;
-    display: grid;
-    height: 100vh;
+    // display: grid;
+    // height: 100vh;
     > .content {
         // grid-column-start: 1;
         text-align: center;
         width: 100%;
+        padding-top: 2rem;
        > h1 {
             padding: 2rem 0;
         }

@@ -1,13 +1,19 @@
 
-.left-sidebar {
+nav {
     /* height: 100%; */
     background: teal;
     /* max-width: 200px;
     position: absolute; */
-    padding: 2em;
+
+    & .show {
+        display: block;
+    }
+    & .hide {
+        display: none;
+    }
     ul {
         margin: 0;
-        padding: 0;
+        padding: 2rem;
         list-style-type: none;
         li {
             margin-bottom: 2em;
@@ -19,8 +25,10 @@
     }
 }
 
-@media screen and (max-width: 400px) {
-    .left-sidebar {
-        display: none;
+@media screen and (min-width: 400px) {
+    nav{
+        display: block;
+        // position: absolute;
+        height: 100vh;
     }
 }

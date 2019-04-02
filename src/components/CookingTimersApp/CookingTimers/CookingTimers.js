@@ -211,7 +211,7 @@ const CookingTimersPage = () => {
                 <button
                     onClick={() => addTimer()}
                 >
-                <span>+</span>
+                    <span>+</span>
                 </button>
                 <Timers
                 timers={timers}
