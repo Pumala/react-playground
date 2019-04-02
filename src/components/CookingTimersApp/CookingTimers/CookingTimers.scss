@@ -8,6 +8,7 @@
     // justify-items: center;
     > .content {
         overflow: scroll;
+        margin: 3rem 10px;
         // padding-top: 4rem;
         // width: 100%;
         text-align: center;
@@ -33,7 +34,6 @@
     .cooking-timers-app {
         > .content {
             width: 571.31px;
-            margin: 0 auto;
             > h1 {
             }
             > button {
