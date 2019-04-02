@@ -8,14 +8,8 @@
         // grid-column-start: 1;
         text-align: center;
         width: 100%;
-        h1 {
+       > h1 {
             padding: 2rem 0;
         }
-    }
-}  
-
-@media screen and (min-width: 760px) {
-    h1 {
-        font-size: 32px;
     }
 }

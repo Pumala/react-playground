@@ -1,0 +1,49 @@
+.timer-group {
+    margin-bottom: 1rem;
+
+    .timer-name {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .timer-name-edit {
+        box-sizing: border-box;
+        outline: none;
+        padding: 8px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .timer-clock {
+        font-size: 16px;
+        display: block;
+        padding: 10px 0;
+    }
+    .buttons-timer-group {
+        .button-timer-adj {
+            outline: none;
+            border: none;
+            padding: 12px 0;
+            border-radius: 0;
+            font-size: 16px;
+            width: 25%;
+            &.start {
+                background: plum;
+            }
+        
+            &.pause {
+                background: lightsalmon;
+            }
+        
+            &.reset {
+                background: lightgreen;
+            }
+            
+            &.increase {
+                background: lightblue;
+            }
+        
+            &.decrease {
+                background: lightseagreen;
+            }
+        }
+    }
+}

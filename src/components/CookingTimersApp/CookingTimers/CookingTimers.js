@@ -206,13 +206,13 @@ const CookingTimersPage = () => {
 
     return (
         <div className="cooking-timers-app">
-            <div>
+            <div className="content">
                 <h1>{title}</h1>
-                <span>
-                    <button
-                        onClick={() => addTimer()}
-                    >+</button>
-                </span>
+                <button
+                    onClick={() => addTimer()}
+                >
+                <span>+</span>
+                </button>
                 <Timers
                 timers={timers}
                 startTimer={startTimer}

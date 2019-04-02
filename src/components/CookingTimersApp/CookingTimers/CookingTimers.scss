@@ -1,5 +1,45 @@
 @import '../../../styles/styles.scss';
 
 .cooking-timers-app {
-    @extend %center-content;
+    // @extend %center-content;
+    display: grid;
+    height: 100vh;
+    // justify-items: center;
+    > .content {
+        overflow: scroll;
+        padding-top: 4rem;
+        // width: 100%;
+        text-align: center;
+        margin: 10px;
+        > h1 {
+            display: inline-block;
+        }
+        > button {
+            outline: none;
+            border: none;
+            padding-left: 15px;
+            background-color: transparent;
+            > span {
+                font-size: 32px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .cooking-timers-app {
+        > .content {
+            width: 571.31px;
+            margin: 0 auto;
+            > h1 {
+            }
+            > button {
+                > span {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
 }

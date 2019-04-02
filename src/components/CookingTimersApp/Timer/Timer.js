@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Timer.css';
+import './Timer.scss';
 
 const Timer = ({ timer, startTimer, pauseTimer, resetTimer, increaseTime, decreaseTime, updateTimerName }) => {
 
@@ -58,44 +58,60 @@ const Timer = ({ timer, startTimer, pauseTimer, resetTimer, increaseTime, decrea
     }
 
     return (
-        <div>
+        <div 
+            className="timer-group"
+        >
             <div>
                 {
                     !timerName.editNameMode &&
                     <h4
+                        className="timer-name"
                         onClick={(e) => editNameMode(e)}
                     >{name}</h4>
                 }
                 {
                     timerName.editNameMode && 
                     <input 
+                        className="timer-name-edit"
                         value={timerName.updatedName}
                         onChange={(e) => editNameChangeHandler(e)}
                         onKeyUp={(e) => submitNameChange(e)}
+                        maxlength="17"
                     type="text" />
                 }
+                <span
+                    className="timer-clock"
+                >{min}:{sec < 10 ? 0 : ''}{sec}</span>
             </div>
-            <span>{min}:{sec < 10 ? 0 : ''}{sec}</span>
+            <div 
+                className="buttons-timer-group"
+            >
             {
                 mode === 'paused' && <button
+                    className="button-timer-adj start"
                     onClick={() => startTimer(timer) }    
                 >Start</button>
             }
             {
                 mode === 'started' && <button
+                    className="button-timer-adj pause"
                     onClick={() => pauseTimer(timer) }    
                 >Pause</button>
             }
             <button
+                className="button-timer-adj reset"
                 onClick={() => resetTimer(timer)}
             >Reset</button>
             <button
+                className="button-timer-adj increase"
                 onClick={() => increaseTime(id)}
-            >+30</button>
+            >+30s</button>
             <button
+                className="button-timer-adj decrease"
                 onClick={() => decreaseTime(id)}
                 disabled={mode === 'reset'}
-            >-30</button>
+            >-30s</button>
+            </div>
         </div>
     )
 
