@@ -8,7 +8,7 @@ const LeftSideNav = ({toggleMenu}) => {
 
     return (
         <nav 
-            className={"left-sidebar" && toggleMenu ? "show" : "hide"}>
+            className={"left-sidebar " + (toggleMenu ? "show" : "hide")}>
             <ul>
                 <li>
                     <Link

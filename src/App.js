@@ -5,6 +5,11 @@ import ColorBrowser from './components/ColorBrowserApp/ColorBrowser/ColorBrowser
 import CookingTimers from './components/CookingTimersApp/CookingTimers/CookingTimers';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.scss';
+import styled, { css } from 'styled-components';
+
+const MenuToggler = styled.span`
+  color: ${props => props.toggleMenu ? '#fff' : '#000'}
+`
 
 const App = () => {
 
@@ -23,10 +28,11 @@ const App = () => {
             toggleMenu={toggleMenu}
           />
           <header>
-            <span
+            <MenuToggler
               className="toggle-menu-button"
+              toggleMenu={toggleMenu}
               onClick={() => togglingMenu()}
-            >=</span>
+            >=</MenuToggler>
           </header>
           <main className="main-view">
             <Route exact path="/" component={Home} />
@@ -40,6 +46,12 @@ const App = () => {
 }
 
 export default App;
+
+// <span
+//               className="toggle-menu-button"
+//               toggleMenu={toggleMenu}
+//               onClick={() => togglingMenu()}
+//             >=</span>
 
 // class App extends Component {
 //   toggleMenu = () => {
