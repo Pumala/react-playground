@@ -1,0 +1,17 @@
+
+.not-found {
+    display: grid;
+    height: 100vh;
+    margin: 0 2rem;
+    place-items: center center;
+     > .content {
+        h1 {
+            font-size: 2rem;
+            margin-top: -2em;
+            margin-bottom: .5em;
+        }
+        p {
+            font-size: 1.25rem;
+        }
+    }    
+}
