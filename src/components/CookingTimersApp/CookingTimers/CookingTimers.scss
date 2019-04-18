@@ -1,18 +1,12 @@
 @import '../../../styles/styles.scss';
 
 .cooking-timers-app {
-    // @extend %center-content;
-    // display: grid;
     height: 100vh;
     overflow: scroll;
-    // justify-items: center;
     > .content {
         overflow: scroll;
         margin: 3rem 10px;
-        // padding-top: 4rem;
-        // width: 100%;
         text-align: center;
-        // margin: 10px;
         > h1 {
             display: inline-block;
         }
@@ -34,9 +28,7 @@
     .cooking-timers-app {
         > .content {
             width: 571.31px;
-            margin: 3rem auto;
-            > h1 {
-            }
+            margin: 5rem auto;
             > button {
                 > span {
                     font-size: 40px;

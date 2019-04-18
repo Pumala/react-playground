@@ -3,8 +3,6 @@ import './Timer.scss';
 
 const Timer = ({ timer, startTimer, pauseTimer, resetTimer, increaseTime, decreaseTime, updateTimerName }) => {
 
-    console.log('inside timer comp:', timer);
-
     const { id, name, min, sec, mode, intervalFuncName } = timer;
 
     const [timerName, setTimerName] = useState({
@@ -14,7 +12,7 @@ const Timer = ({ timer, startTimer, pauseTimer, resetTimer, increaseTime, decrea
 
     const editNameMode = (e) => {
         e.persist();
-        console.log('editing name:', e);
+
         setTimerName({
             ...timerName,
             editNameMode: true
@@ -26,26 +24,19 @@ const Timer = ({ timer, startTimer, pauseTimer, resetTimer, increaseTime, decrea
         e.persist();
         let updatedName = e.target.value;
 
-        console.log('before:',timerName);
-
         setTimerName({
             ...timerName,
             updatedName: updatedName
         });
 
-        console.log('updated Name change:', e);
-        console.log('after:',timerName);
     };
 
     const submitNameChange = (e) => {
         e.persist();
 
-        console.log('keycode e', e);
-
         let keyCode = e.keyCode;
 
         if (keyCode === 13) {
-            console.log('ready to submit');
             updateTimerName(id, timerName.updatedName);
 
             setTimerName({
@@ -54,7 +45,6 @@ const Timer = ({ timer, startTimer, pauseTimer, resetTimer, increaseTime, decrea
             })
         }
 
-        console.log('submitNameChange....', timerName.updatedName);
     }
 
     return (

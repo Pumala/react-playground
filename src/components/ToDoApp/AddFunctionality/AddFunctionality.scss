@@ -1,0 +1,27 @@
+.add-functionality {
+    input {
+        outline: none;
+        font-size: 16px;
+        box-sizing: border-box;
+        padding: 5px;
+        width: 100%;
+        border: 2px solid #000;
+    }
+    button {
+        width: 100%;
+        outline: none;
+        border: none;
+        color: #fff;
+        border-radius: 0 0 5px 5px;
+        background: #222;
+        font-size: 16px;
+        padding: 5px;
+        cursor: pointer;
+        &:disabled {
+            cursor: not-allowed;
+        }
+        &:hover {
+            //
+        }
+    }
+}

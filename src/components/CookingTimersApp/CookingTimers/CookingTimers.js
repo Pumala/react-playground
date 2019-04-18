@@ -46,7 +46,6 @@ const CookingTimersPage = () => {
     const startTimer = ({ id, name, min, sec, mode }) => {
 
         if (name) {
-            console.log('starting timer....', name);
 
             let setIntervalId = setInterval(() => {
                 setTimers(cookingTimers => {
@@ -55,7 +54,6 @@ const CookingTimersPage = () => {
                         if (timer.id === id) {
                             const { sec, min } = timer;
                             if (min === 0 && sec === 0) {
-                                console.log('MATCH!!');
                                 clearTimer(timer.intervalFuncName);
                                 return {
                                     ...timer,
@@ -83,7 +81,6 @@ const CookingTimersPage = () => {
     }
 
     const updateTimerName = (id, name) => {
-        console.log('setting timer name...', name);
         setTimers(cookingTimers => {
             const timers = cookingTimers.map(timer => {
                 if (timer.id === id) {
@@ -99,10 +96,8 @@ const CookingTimersPage = () => {
     };
 
     const addTimer = () => {
-        console.log('adding new timer...');
 
         setTimers(cookingTimers => {
-            console.log('PAST TIMERS', cookingTimers);
             const timers = [
                 ...cookingTimers,
                 {
@@ -122,12 +117,10 @@ const CookingTimersPage = () => {
     }
 
     const clearTimer = (intervalFuncName) => {
-        console.log('clearing timer....', intervalFuncName);
         clearInterval(intervalFuncName);
     };
 
     const resetTimer = ({id, intervalFuncName}) => {
-        console.log('resetting timer....', intervalFuncName);
         clearInterval(intervalFuncName);
 
         setTimers(cookingTimers => {
@@ -150,7 +143,6 @@ const CookingTimersPage = () => {
     };
 
     const pauseTimer = ({id, intervalFuncName}) => {
-        console.log('pausing timer....', intervalFuncName);
         clearInterval(intervalFuncName);
 
         setTimers(cookingTimers => {
@@ -169,7 +161,6 @@ const CookingTimersPage = () => {
     };
 
     const increaseTime = (timerId) => {
-        console.log('increasing time....');
         setTimers(cookingTimers => {
             const timers = cookingTimers.map(timer => {
                 const { id, min, sec } = timer;
@@ -187,7 +178,6 @@ const CookingTimersPage = () => {
     };
 
     const decreaseTime = (timerId) => {
-        console.log('decreasing time....');
         setTimers(cookingTimers => {
             const timers = cookingTimers.map(timer => {
                 const { id, min, sec } = timer;

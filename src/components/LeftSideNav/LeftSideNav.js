@@ -4,8 +4,6 @@ import './LeftSideNav.scss';
 
 const LeftSideNav = ({toggleMenu}) => {
 
-    console.log('toggling away...', toggleMenu);
-
     return (
         <nav 
             className={"left-sidebar " + (toggleMenu ? "show" : "hide")}>
@@ -24,6 +22,11 @@ const LeftSideNav = ({toggleMenu}) => {
                     <Link 
                         to="/cooking-timers"
                     >Cooking Timers</Link>
+                </li>
+                <li>
+                    <Link 
+                        to="/to-do-list"
+                    >To Do List</Link>
                 </li>
             </ul>
         </nav>

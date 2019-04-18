@@ -1,0 +1,22 @@
+.to-do-list-app {
+    background: #fff;
+    height: 100vh;
+    text-align: center;
+    overflow: scroll;
+    .content {
+        margin: 3rem 10px;
+        box-sizing: border-box;
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+};
+
+@media screen and (min-width: 760px) {
+    .to-do-list-app {
+        > .content {
+            width: 571.31px;
+            margin: 5rem auto;
+        }
+    }
+}

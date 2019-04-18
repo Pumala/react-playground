@@ -2,7 +2,6 @@
 .left-sidebar {
     height: 100%;
     background: teal;
-    /* max-width: 200px;*/
     position: absolute;
     -webkit-font-smoothing: antialiased;
     
@@ -12,11 +11,9 @@
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 
     &.show {
-        // display: block;
         transform: translate(0, 0);
     }
     &.hide {
-        // display: none;
         transform: translate(-100%, 0);
     }
     ul {

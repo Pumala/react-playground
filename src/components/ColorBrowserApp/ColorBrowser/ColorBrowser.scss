@@ -1,14 +1,9 @@
 @import '../../../styles/styles.scss';
 
 .color-browser-app {
-    // @extend %center-content;
-    // display: grid;
-    // height: 100vh;
     > .content {
-        // grid-column-start: 1;
         text-align: center;
-        // width: 100%;
-        margin: 3rem 10px;
+        margin: 3rem 10px 0 10px;
         padding-top: 2rem;
        > h1 {
             padding: 2rem 0;

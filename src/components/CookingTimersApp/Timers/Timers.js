@@ -3,8 +3,6 @@ import Timer from '../Timer/Timer';
 
 const Timers = ({ timers = [], startTimer, pauseTimer, resetTimer, increaseTime, decreaseTime, updateTimerName }) => {
 
-    console.log('timers:', timers);
-
     return (
         <div>
             {
