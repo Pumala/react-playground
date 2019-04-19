@@ -5,7 +5,7 @@ import ColorBrowser from './components/ColorBrowserApp/ColorBrowser/ColorBrowser
 import CookingTimers from './components/CookingTimersApp/CookingTimers/CookingTimers';
 import ToDoList from './components/ToDoApp/ToDoList/ToDoList';
 import NotFound from './components/NotFound/NotFound';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import styled, { css } from 'styled-components';
 
@@ -37,11 +37,13 @@ const App = () => {
             >=</MenuToggler>
           </header>
           <main className="main-view">
-            <Route exact path="/" component={Home} />
-            <Route path="/color-browser" component={ColorBrowser} />
-            <Route path="/cooking-timers" component={CookingTimers} />
-            <Route path="/to-do-list" component={ToDoList} />
-            <Route component={NotFound} />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/color-browser" component={ColorBrowser} />
+              <Route path="/cooking-timers" component={CookingTimers} />
+              <Route path="/to-do-list" component={ToDoList} />
+              <Route component={NotFound} />
+            </Switch>
           </main>
         </div>
       </section>
