@@ -28,6 +28,11 @@ const LeftSideNav = ({toggleMenu}) => {
                         to="/to-do-list"
                     >To Do List</Link>
                 </li>
+                <li>
+                    <Link 
+                        to="/music-api"
+                    >Music API</Link>
+                </li>
             </ul>
         </nav>
     )
