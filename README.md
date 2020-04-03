@@ -14,7 +14,7 @@ I built this application as a way to learn React Hooks.
 
 ### Live Demo:
 
-[Blog App](https://clamclamblogs.web.app/)
+[React Playground](http://iamclamclam.com/react-playground/#/)
 
 ### Languages / Frameworks / Technologies used:
 
